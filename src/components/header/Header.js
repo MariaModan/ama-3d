@@ -18,20 +18,25 @@ class Header extends Component {
                 </nav>
                 <nav id='materials-nav'>
                     <ul>
-                        <li><Link to='/culori-noi'>Culori Noi</Link></li>
-                        <li><Link to='/abs-not-dead'>ABS NOT DEAD</Link></li>
-                        <li><Link to='/asa'>ASA</Link></li>
-                        <li><Link to='/abs-t'>ABS-T</Link></li>
-                        <li><Link to='/cfjet'>CFJET</Link></li>
-                        <li><Link to='/frjet'>FRJET</Link></li>
-                        <li><Link to='/glowjet'>GLOWJET</Link></li>
-                        <li><Link to='/hips'>HIPS</Link></li>
-                        <li><Link to='/marblejet'>MARBLEJET</Link></li>
-                        <li><Link to='/pajet'>PAJET</Link></li>
-                        <li><Link to='/pc-abc'>PC/ABS</Link></li>
-                        <li><Link to='/petg'>PETG</Link></li>
+                        {/* {this.props.categories.map( (category, index) => {
+                            return <li key={`nav-${index}`}><Link to={`${category}`} >{category.toUpperCase()}</Link></li>
+                        })} */}
                         <li><Link to='/pla'>PLA</Link></li>
-                        <li><Link to='/rubberjet'>RUBBERJET</Link></li>
+                        <li><Link to='/abs'>ABS</Link></li>
+                        <li><Link to='/abs-t'>ABS-T</Link></li>
+                        <li><Link to='/petg'>PETG</Link></li>
+                        <li><Link to='/marblejet'>MARBLEJET</Link></li>
+                        <li><Link to='/hips'>HIPS</Link></li>
+                        <li><Link to='/tpe32'>TPE32</Link></li>
+                        <li><Link to='/tpe88'>TPE88</Link></li>
+                        <li><Link to='/pc-abs'>PC/ABS</Link></li>
+                        <li><Link to='/pva'>PVA</Link></li>
+                        <li><Link to='/petg-cf'>PETG/CF</Link></li>
+                        <li><Link to='/pajet'>PAJET</Link></li>
+                        <li><Link to='/frjet'>FRJET</Link></li>
+                        
+                        
+                        
                     </ul>
                 </nav>
                 
