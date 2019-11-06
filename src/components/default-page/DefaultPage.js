@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import ItemsContainer from './ItemsContainer'; 
+import ItemsContainer from '../ItemsContainer'; 
 
-class Homepage extends Component {
+class DefaultPage extends Component {
     render() {
         return (
             <div>
+                <h1>Culori Noi</h1>
                 <ItemsContainer />
             </div>
         )
     }
 }
 
-export default Homepage;
+export default DefaultPage;

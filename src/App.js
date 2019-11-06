@@ -1,13 +1,19 @@
 import React from 'react';
-import NavBar from './components/NavBar/NavBar';
-import Homepage from './components/Homepage';
+import { Switch, Route, Redirect } from 'react-router-dom';
+
+import Header from './components/header/Header';
+import DefaultPage from './components/default-page/DefaultPage';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Homepage />
+      <Header />
+      <Switch>
+        {/* <Route exact path='/' component={DefaultPage} /> */}
+        <Route exact path='/culori-noi' component={DefaultPage} />
+      </Switch>
     </div>
   );
 }
