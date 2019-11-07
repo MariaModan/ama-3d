@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+import ProductDirectory from '../../components/productDirectory/ProductDirectory';
 
-class Marblejet extends Component {
-    
-    render() {
-        return (
-            <div>
-                <h1>MARBLEJET</h1>
-            </div>
-        )
-    }
+const Marblejet  = ({ products }) =>  {
+    return (
+        <div>
+            <h1>MARBLEJET</h1>
+            <ProductDirectory products={products}/>
+        </div>
+    )
 }
+
 
 export default Marblejet;

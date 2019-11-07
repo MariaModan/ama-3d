@@ -24,8 +24,7 @@ class  App extends React.Component {
   constructor(){
     super();
     this.state = {
-      shopData: [],
-      categories: []
+      shopData: []
     }
   }
 
@@ -42,8 +41,7 @@ class  App extends React.Component {
           })
 
           this.setState({
-            shopData: googleData,
-            categories: arr
+            shopData: googleData
           })
         },
         simpleSheet: true
@@ -55,19 +53,45 @@ class  App extends React.Component {
       <div className="App">
         <Header categories={this.state.categories}/>
         <Switch>
-          <Route exact path='/pla' component={Pla}/>
-          <Route exact path='/abs' component={Abs}/>
-          <Route exact path='/abs-t' component={AbsT}/>
-          <Route exact path='/petg' component={Petg}/>
-          <Route exact path='/marblejet' component={Marblejet}/>
-          <Route exact path='/hips' component={Hips}/>
-          <Route exact path='/tpe32' component={Tpe32}/>
-          <Route exact path='/tpe88' component={Tpe88}/>
-          <Route exact path='/pc-abs' component={PcAbs}/>
-          <Route exact path='/pva' component={Pva}/>
-          <Route exact path='/petg-cf' component={PetgCf}/>
-          <Route exact path='/pajet' component={Pajet}/>
-          <Route exact path='/frjet' component={Frjet}/>
+          <Route 
+            exact path='/pla' 
+            render={(props) => <Pla {...props} products={this.state.shopData.filter(data => data.title ==='PLA')} />}/>
+          <Route 
+            exact path='/abs' 
+            render={(props) => <Abs {...props} products={this.state.shopData.filter(data => data.title ==='ABS')} />}/>
+          <Route 
+            exact path='/abs-t' 
+            render={(props) => <AbsT {...props} products={this.state.shopData.filter(data => data.title ==='ABS-T')} />}/>
+          <Route 
+            exact path='/petg' 
+            render={(props) => <Petg {...props} products={this.state.shopData.filter(data => data.title ==='PETG')} />}/>
+          <Route 
+            exact path='/marblejet' 
+            render={(props) => <Marblejet {...props} products={this.state.shopData.filter(data => data.title ==='MARBLEJET')} />}/>
+          <Route 
+            exact path='/hips' 
+            render={(props) => <Hips {...props} products={this.state.shopData.filter(data => data.title ==='HIPS')} />}/>
+          <Route 
+            exact path='/tpe32' 
+            render={(props) => <Tpe32 {...props} products={this.state.shopData.filter(data => data.title ==='TPE32')} />}/>
+          <Route 
+            exact path='/tpe88' 
+            render={(props) => <Tpe88 {...props} products={this.state.shopData.filter(data => data.title ==='TPE88')} />}/>
+          <Route 
+            exact path='/pc-abs' 
+            render={(props) => <PcAbs {...props} products={this.state.shopData.filter(data => data.title ==='PC-ABS')} />}/>
+          <Route 
+            exact path='/pva' 
+            render={(props) => <Pva {...props} products={this.state.shopData.filter(data => data.title ==='Pva')} />}/>
+          <Route 
+            exact path='/petg-cf' 
+            render={(props) => <PetgCf {...props} products={this.state.shopData.filter(data => data.title ==='PETG/CF')} />}/>
+          <Route 
+            exact path='/pajet' 
+            render={(props) => <Pajet {...props} products={this.state.shopData.filter(data => data.title ==='PAJET')} />}/>
+          <Route 
+            exact path='/frjet' 
+            render={(props) => <Frjet {...props} products={this.state.shopData.filter(data => data.title ==='FRJET')} />}/>
           {/* {this.state.categories.map( (category, index) => {
               return <Route exact path={`/${category}`} key={index} component={`${category.charAt(0).toUpperCase() + category.slice(1)}`}/>
           })} */}

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+import ProductDirectory from '../../components/productDirectory/ProductDirectory';
 
-class PetgCf extends Component {
-    
-    render() {
-        return (
-            <div>
-                <h1>PETGCF</h1>
-            </div>
-        )
-    }
+const PetgCf  = ({ products }) => {
+    return (
+        <div>
+            <h1>PETGCF</h1>
+            <ProductDirectory products={products}/>
+        </div>
+    )
 }
+
 
 export default PetgCf;

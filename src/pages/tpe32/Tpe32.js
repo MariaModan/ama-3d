@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+import ProductDirectory from '../../components/productDirectory/ProductDirectory';
 
-class Tpe32 extends Component {
-    
-    render() {
-        return (
-            <div>
-                <h1>TPE32</h1>
-            </div>
-        )
-    }
+const Tpe32  = ({ products }) => {
+    return (
+        <div>
+            <h1>TPE32</h1>
+            <ProductDirectory products={products}/>
+        </div>
+    )
 }
+
 
 export default Tpe32;

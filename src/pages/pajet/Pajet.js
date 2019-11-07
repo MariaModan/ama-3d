@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+import ProductDirectory from '../../components/productDirectory/ProductDirectory';
 
-class Pajet extends Component {
-    
-    render() {
-        return (
-            <div>
-                <h1>PAJET</h1>
-            </div>
-        )
-    }
+const Pajet  = ({ products }) =>  {
+    return (
+        <div>
+            <h1>PAJET</h1>
+            <ProductDirectory products={products}/>
+        </div>
+    )
 }
+
 
 export default Pajet;
