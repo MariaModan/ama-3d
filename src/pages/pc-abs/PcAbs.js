@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ProductDirectory from '../../components/productDirectory/ProductDirectory';
 
 const  PcAbs = ({ products }) => {
