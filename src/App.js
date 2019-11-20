@@ -55,7 +55,7 @@ class  App extends React.Component {
         <Switch>
           <Route 
             exact path='/pla' 
-            render={(props) => <Pla {...props} products={this.state.shopData.filter(data => data.title ==='PLA')} />}/>
+            render={(props) => <Pla {...props} products={this.state.shopData.filter(data => data.title ==='PLA')} title='PLA'/>}/>
           <Route 
             exact path='/abs' 
             render={(props) => <Abs {...props} products={this.state.shopData.filter(data => data.title ==='ABS')} />}/>
@@ -79,7 +79,7 @@ class  App extends React.Component {
             render={(props) => <Tpe88 {...props} products={this.state.shopData.filter(data => data.title ==='TPE88')} />}/>
           <Route 
             exact path='/pc-abs' 
-            render={(props) => <PcAbs {...props} products={this.state.shopData.filter(data => data.title ==='PC-ABS')} />}/>
+            render={(props) => <PcAbs {...props} products={this.state.shopData.filter(data => data.title ==='PC/ABS')} />}/>
           <Route 
             exact path='/pva' 
             render={(props) => <Pva {...props} products={this.state.shopData.filter(data => data.title ==='Pva')} />}/>

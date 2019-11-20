@@ -12,10 +12,7 @@ class Header extends Component {
                 <MediaQuery minDeviceWidth={1025}>
                     <DesktopNav />
                 </MediaQuery>
-                <MediaQuery minDeviceWidth={768} maxDeviceWidth={1024}>
-                    <p>you are not a laprop screen</p>
-                </MediaQuery>
-                <MediaQuery maxDeviceWidth={768}>
+                <MediaQuery maxDeviceWidth={1024}>
                     <PhoneNav />
                 </MediaQuery>
                 
