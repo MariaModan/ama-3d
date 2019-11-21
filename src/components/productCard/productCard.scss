@@ -1,7 +1,24 @@
 .product-card {
-
     padding: 0 15px;
-    img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    & img {
         width: 200px;
+        margin: auto;
     }
+
+    & p {
+        margin: auto;
+        padding:15px;
+    }
+    
+    & .filament-description {
+        border-bottom: 2px solid #ccc;
+    }
+
 }

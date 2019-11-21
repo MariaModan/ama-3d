@@ -32,12 +32,15 @@ class PhoneNav extends Component {
         return (
             <div id='top-nav'>
                 <img  src={logo} alt='logo' class='logo'/>
-               <Link><img src={shoppingBag} alt='shopping-bag' class='bag-img'/></Link>
-                <div class='hamburger' onClick={this.toggleMobileMenu}>
-                    <div class='bar1'></div>
-                    <div class='bar2'></div>
-                    <div class='bar2'></div>
+                <div className='top-nav-right-corner'>
+                    <Link><img src={shoppingBag} alt='shopping-bag' class='bag-img'/></Link>
+                    <div class='hamburger' onClick={this.toggleMobileMenu}>
+                        <div class='bar1'></div>
+                        <div class='bar2'></div>
+                        <div class='bar2'></div>
+                    </div>
                 </div>
+               
                 
                 <div className={this.state.mobileMenu}>
                     <ul onClick={this.handleLinkClick}>

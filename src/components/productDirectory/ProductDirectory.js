@@ -4,9 +4,9 @@ import './productDirectory.scss';
 
 class ProductDirectory extends Component {
     render() {
+        console.log(this.props.title)
         return (
             <div>
-                <h1>{this.props.title}</h1>
                 <div className='product-list'>
                 {this.props.products.map(item => (
                     <ProductCard item={item} key={item.id}/>

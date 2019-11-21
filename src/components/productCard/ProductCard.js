@@ -7,7 +7,10 @@ class ProductCard extends Component {
         return (
             <div className='product-card'>
                 <img src={(`${image}`)} alt={(`${alt}`)}/>
-                <p>{title} - {kg}kg - {color} -{price} RON</p>
+                <p className='filament-description'>
+                    {`Filament ${title} - ${color} ${kg}kg`}
+                </p>
+                <p className='price-tag'>{`${price} RON`}</p>
             </div>
         )
     }
